@@ -24,7 +24,7 @@ body {
 /********************************************************/
 /*                    Navigation bar                    */
 /********************************************************/
-.mainmenu { z-index: 999999; width:100%;  padding: 30px 0 0 0;}
+.mainmenu { z-index: 999999; width:100%;  padding: 0 0 0 0;}
 @media (min-width: 768px) {
 	.mainmenu { position: fixed; }
 }
@@ -119,7 +119,7 @@ body {
 	.section { padding-top:120px;}
 }*/
 @media {
-	.section { padding-top:120px;}
+	.section { padding-top:70px;}
 }
 /* Show one of sections */
 #head { 
