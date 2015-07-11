@@ -64,7 +64,7 @@ body {
 .mainmenu .dropdown-menu {
 	top: -14em;
 	left: 0px;
-	font-size: 13px;
+	font-size: 20px;
 	padding:0;
 	background:none;
 	border:0 none;
@@ -116,9 +116,11 @@ body {
 	top:0;
 } 
 @media (min-width: 768px) {
-	.section { padding-top:160px;}
+	.section { padding-top:120px;}
 }
-
+@media {
+	.section { padding-top:180px;}
+}
 /* Show one of sections */
 #head { 
 	display: block;
@@ -152,10 +154,10 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 	margin-bottom:40px; 
 }
 .tagline { 
-	font-size:1.4em;
-	line-height:1.3em;
+	font-size:2.3em;
+	line-height:2.3em;
 	font-weight:normal;
-	margin-bottom:75px;
+	margin-bottom:100px;
 }
 
 @media (max-width: 767px) {
