@@ -64,7 +64,7 @@ body {
 .mainmenu .dropdown-menu {
 	top: -14em;
 	left: 0px;
-	font-size: 20px;
+	font-size: 14px;
 	padding:0;
 	background:none;
 	border:0 none;
@@ -115,11 +115,11 @@ body {
 	display:none;
 	top:0;
 } 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
 	.section { padding-top:120px;}
-}
+}*/
 @media {
-	.section { padding-top:180px;}
+	.section { padding-top:120px;}
 }
 /* Show one of sections */
 #head { 
