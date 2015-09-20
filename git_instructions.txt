@@ -1,0 +1,8 @@
+git checkout master  --  gets one to the master branch
+git branch [name of branch] --  creates a new branch
+git checkout [name of branch]
+[do stuff coding] -- change or add files
+git add [file name or use a period for every file] --  can only be done from the directory of git file
+git commit -m "[message about what changed]" -- actually save the changes to the repo
+git push origin [name of branch] -- this pushes the working branch to the remote repo
+in git hub create the pull request
