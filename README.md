@@ -1,6 +1,6 @@
 10K HOURS MEDIA WEBSITE
 =============
 
-Agleska will add stuff here.
+Agléška will add stuff here.
 
-- Hello from Ben!
+- Hello from Agléška!
