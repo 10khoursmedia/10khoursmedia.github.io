@@ -42,7 +42,7 @@ Text Domain: flusk
 * {outline: none !important;}
 
 ::selection {
-  background-color: #475B6F;
+  background-color: #fff;
   color: #fff;
 }
 
