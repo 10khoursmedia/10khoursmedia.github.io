@@ -4,4 +4,3 @@
 Agléška will add stuff here.
 
 - Hello from Agléška!
-- Hello from Zsuzsi
