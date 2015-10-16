@@ -66,6 +66,8 @@ p {
 
 img {max-width: 100%;}
 
+img.quarters { width: 50%;}
+
 a {
   text-decoration: none;
   outline: none;
