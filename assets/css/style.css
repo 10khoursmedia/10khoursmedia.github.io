@@ -66,6 +66,8 @@ p {
 
 img {max-width: 100%;}
 
+.svg {max-width: 100%;}
+
 img.quarters { width: 50%;}
 
 a {
@@ -289,7 +291,7 @@ h1.logo {
   transition: all .4s;
 }
 
-.header-logo img {
+.header-logo .svg {
   width: 100%;
 }
 
