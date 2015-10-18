@@ -42,16 +42,16 @@
 		<header class="top-header">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3 col-xs-5 col-sm-4 header-logo">
-						<object class="svg" data="assets/images/10KHOURS_MEDIA/logo.svg" type="image/svg+xml"></object>
+					<div class="col-sm-3 hidden-xs header-logo">
+						<object class="svg circular-img" data="assets/images/10KHOURS_MEDIA/logo.svg" type="image/svg+xml"></object>
 					</div>
 
-					<div class="col-md-8 col-xs-7">
+					<div class="col-sm-8">
 						<nav class="navbar navbar-default">
 						  	<div class="container-fluid nav-bar">
 						    <!-- Brand and toggle get grouped for better mobile display -->
 							    <div class="navbar-header">
-							      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							      	<button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 								        <span class="sr-only">Toggle navigation</span>
 								        <span class="icon-bar"></span>
 								        <span class="icon-bar"></span>
@@ -106,7 +106,7 @@
 			</div><!-- header -->
 			<div class="content-block" id="portfolio">
 				<div class="container portfolio-sec">
-					<header class="block-heading cleafix">
+					<header class="block-heading clearfix">
 						<!-- <a href="#" class="btn btn-o btn-lg pull-right">View All</a> -->
 						<div class="title-page">
 							<p class="main-header">The Latest Work </p>
@@ -210,7 +210,7 @@
 
 			<div class="content-block">
 	            <div class="container">
-	                <header class="block-heading cleafix">
+	                <header class="block-heading">
 						<div class="title-page">
 							<p class="main-header">We are throwing a party</p>
 						    <p class="sub-header">Come and celebrate!</p>
@@ -234,14 +234,14 @@
 	        <!-- /Launchparty -->
 
 			<!-- About us -->
-	        <div id="about" class="about-us">
-	            <div class="container about-sec">
-	                <header class="block-heading cleafix">
-							<div class="title-page">
-								<p class="main-header">Meet Zsuzsi</p>
-							    <p></p>
-							</div>
-						</header>
+	        <!-- <div > -->
+	            <div id="about" class="content-block">
+	                <header class="container block-heading">
+						<div class="title-page">
+							<p class="main-header">Meet Zsuzsi</p>
+						    <p></p>
+						</div>
+					</header>
 	                <div class="divide50"></div>
 	                <section class="block-body">
 	                	<div class="col-md-4">
@@ -254,16 +254,16 @@
 							   <img class="quarters img-thumbnail" src="assets/images/10KHOURS_MEDIA/zsuzsi3.png">
 							</div>
 						</div>
-
                         <div class="col-md-8">
+	                        <p class="aboutus-desc hidden-lg hidden-md"></p>
 	                        <p class="aboutus-desc">10K Hours Media was created out of great passion for video production. This is a challenging but very fulfilling work for me that makes me get out of bed with excitement every day. I put all my heart into the work I do, and take my clients' vision very seriously.</p>
-							<p class="aboutus-desc">A native of Hungary, I traveled a long way before I arrived here. I studied International Politics, Hungarology, and Mandarin Chinese. I wrote my thesis on national image management, I worked as a language teacher, and managed international relations at the Hungarian government. I did it all with enthusiasm, but when I study film production  at the NW Film Center, I found all the passion in the creativity of working with video. I love the science of cinematography and I never tire of editing.</p>
+							<p class="aboutus-desc">A native of Hungary, I traveled a long way before I arrived here. I studied International Politics, Hungarology, and Mandarin Chinese. I wrote my thesis on national image management, I worked as a language teacher, and managed international relations at the Hungarian government. I did it all with enthusiasm, but when I learned film production  at the NW Film Center, I felt true passion in the creativity of working with video. I love the science of cinematography and I never tire of editing.</p>
 							<p class="aboutus-desc">10K Hours Media is a group of Portland-based freelancers that pool our creative efforts to make high quality video production.</p>
 	          			</div>         
 	                </section>
 	                <div class="divide50"></div>
 	            </div>
-	        </div>
+	        <!-- </div> -->
 	        <!-- /About us -->
 
 			
@@ -382,24 +382,25 @@
 					<div class="row">
 							<div class="col-sm-4 blog-post">
 								
-								<!-- <h2 class="footer-block">Leave us a message here</h2>
-								<form action="contact-form.php" id="contactForm" method="post" name="contactform" class="" role="form">
+								<h2 class="footer-block">Leave us a message here</h2>
+								<form action="http://formspree.io/ben.ryon@gmail.com" method="POST" name="contactform" class="" role="form">
 									<div class="form-group">
 								    	<input type="text" class="form-control form-control-white" id="name" name="name" placeholder="Your Name" required>
 								  	</div>
 								    <div class="form-group">
-								    	<input type="email" class="form-control form-control-white" id="email" name="email" placeholder="Enter email" required>
+								    	<input type="email" class="form-control form-control-white" id="email" name="_replyto" placeholder="Enter email" required>
 								    </div>
 								    <div class="form-group">
-								    	<textarea class="form-control form-control-white" id="message" name="massage" placeholder="Write Something" required></textarea>
+								    	<textarea class="form-control form-control-white" id="message" name="body" placeholder="Write Something" required></textarea>
 								    </div>
-								    <div id="contactFormResponse"></div>
+								    <div></div>
 								    <div class="form-group">
 								    	<input id="cfsubmit" type="submit" class="text-center btn btn-o-white" value="Say Hello">
 								  	</div>
-								</form> -->
-						<!-- 	</div>
-							<div class="col-sm-4 blog-post"> -->
+								</form>
+							</div>
+
+							<div class="col-sm-4 blog-post">
 								
 								<h2 class="footer-block">Contact us</h2>
 								<ul>
