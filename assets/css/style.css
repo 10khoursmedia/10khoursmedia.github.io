@@ -34,6 +34,12 @@ Text Domain: flusk
     src: url(../fonts/BEBAS/BebasNeueRegular.ttf);
 }
 
+.white p {
+  color: white;
+}
+.black p {
+  color: black;
+}
 
 /* ///////////////////////////////////////////////////////////////////// 
 //  01 - Global 
@@ -173,6 +179,14 @@ header.top-header {
   margin-top: 0px;
   color: white;
 }
+.get-quote {
+  vertical-align: bottom;
+  margin-bottom: 8%;
+}
+
+.row-height {
+  height: 100%;
+}
 
 h1.logo {
   margin-top: 11px;
@@ -185,9 +199,18 @@ h1.logo {
   padding: 0 !important;
 }
 .navbar-nav {
-  float: right;
+
   margin: 31px 0 0;
   color: white;
+}
+
+.nav-center .navbar-def{
+  float: none;
+  margin-right: auto;
+}
+
+.nav-center .navbar-header{
+  margin-right: 5%;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -197,9 +220,9 @@ h1.logo {
 .navbar-default .navbar-nav>li>a:hover {
   color: black;
 }
-.navbar-default .navbar-nav>li>a:visited {
+/*.navbar-default .navbar-nav>li>a:visited {
   color: black;
-}
+}*/
 .shows .navbar-default .navbar-nav>li>a {
   color: white;
 }
@@ -391,7 +414,9 @@ h1.logo {
   background: #db5252;
 }
 */
-
+#about {
+  background-color: white;
+}
 
 
 /*////////////////////////////////////////////////////////////////////////
@@ -543,6 +568,8 @@ h3.call-action.pull-left {
  .parallax {
   padding: 61px 0 55px;
 }
+
+
 
 
 /*////////////////////////////////////////////////////////////////////////
