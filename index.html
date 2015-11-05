@@ -172,34 +172,34 @@
 					<section class="block-body">
 						<div class="row">
 							<div class="col-lg-4">
-								<a href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="https://player.vimeo.com/video/132678484" class="recent-work" style="background-image:url(assets/images/10KHOURS_MEDIA/Ecdysiasttrailer.png)">
+								<a href="#" data-toggle="modal" name="Ecdysiasttrailer" data-target="#videoModal" data-theVideo="https://player.vimeo.com/video/132678484" class="recent-work" style="background-image:url(assets/images/10KHOURS_MEDIA/Ecdysiasttrailer.png)">
 									<span class="btn btn-o-white">Online promo video</span>
 								</a>
 							</div>
 							<div class="col-lg-4">
-								<a href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="https://player.vimeo.com/video/142469681"  class="recent-work" style="background-image:url(assets/images/10KHOURS_MEDIA/AroundthePole2.png)">
+								<a href="#" data-toggle="modal" name="AroundthePole" data-target="#videoModal" data-theVideo="https://player.vimeo.com/video/142469681"  class="recent-work" style="background-image:url(assets/images/10KHOURS_MEDIA/AroundthePole2.png)">
 									<span class="btn btn-o-white">Film trailer</span>
 								</a>
 							</div>
 							<div class="col-lg-4">
-								<a href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="https://player.vimeo.com/video/130181243" class="recent-work" style="background-image:url(assets/images/10KHOURS_MEDIA/ConsciousBeing.png)">
+								<a href="#" data-toggle="modal" name="ConsciousBeing" data-target="#videoModal" data-theVideo="https://player.vimeo.com/video/130181243" class="recent-work" style="background-image:url(assets/images/10KHOURS_MEDIA/ConsciousBeing.png)">
 									<span class="btn btn-o-white">Live performance</span>
 								</a>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-lg-4">
-								<a href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="https://player.vimeo.com/video/125424002" class="recent-work" style="background-image:url(assets/images/10KHOURS_MEDIA/ccwf2.png)">
+								<a href="#" data-toggle="modal" name="ccwf" data-target="#videoModal" data-theVideo="https://player.vimeo.com/video/125424002" class="recent-work" style="background-image:url(assets/images/10KHOURS_MEDIA/ccwf2.png)">
 									<span class="btn btn-o-white">Non-profit video</span>
 								</a>
 							</div>
 							<div class="col-lg-4">
-								<a href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="https://player.vimeo.com/video/114089610" class="recent-work" style="background-image:url(assets/images/10KHOURS_MEDIA/OhAlice.png)">
+								<a href="#" data-toggle="modal" name="OhAlice" data-target="#videoModal" data-theVideo="https://player.vimeo.com/video/114089610" class="recent-work" style="background-image:url(assets/images/10KHOURS_MEDIA/OhAlice.png)">
 									<span class="btn btn-o-white">Show trailer</span>
 								</a>
 							</div>
 							<div class="col-lg-4">
-								<a href="#" data-toggle="modal" data-target="#videoModal" data-theVideo="https://player.vimeo.com/video/131781834" class="recent-work" style="background-image:url(assets/images/10KHOURS_MEDIA/StevensStory.png)">
+								<a href="#" data-toggle="modal" name="StevensStory" data-target="#videoModal" data-theVideo="https://player.vimeo.com/video/131781834" class="recent-work" style="background-image:url(assets/images/10KHOURS_MEDIA/StevensStory.png)">
 									<span class="btn btn-o-white">Staff profile</span>
 								</a>
 							</div>
@@ -423,6 +423,7 @@
 				trigger.click(function () {
 				  var theModal = $(this).data("target"),
 				      videoSRC = $(this).attr("data-theVideo"),
+				      videoName = $(this).attr("name"),
 				      videoSRCauto = videoSRC + "?autoplay=1";
 				  $(theModal + ' iframe').attr('src', videoSRCauto);
 				  $(theModal + ' button.close').click(function () {
@@ -430,7 +431,7 @@
 				  });
 				  $('.modal').click(function () {
 				      $(theModal + ' iframe').attr('src', videoSRC);
-				      ga('send', 'event', 'VideoModal', videoSRC, 'Q4');
+				      ga('send', 'event', 'VideoModal', videoName, 'Q4');
 				  });
 				});
 			}
