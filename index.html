@@ -48,7 +48,7 @@
 
 					<div>
 						<nav class="navbar navbar-default nav-center">
-						  	<div class="container-fluid nav-bar">
+						  	<div class="container-fluid nav-bar row">
 						    <!-- Brand and toggle get grouped for better mobile display -->
 							    <div class="navbar-header">
 							      	<button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -62,7 +62,7 @@
 						    	<!-- Collect the nav links, forms, and other content for toggling -->
 							    <div class="collapse navbar-collapse navbar-def" id="bs-example-navbar-collapse-1">
 							      
-							      	<ul class="nav navbar-nav navbar-right">
+							      	<ul class="nav navbar-nav">
 							        	<li>
 											<a href="#wrapper"><i class="fa fa-home"></i> Home</a>
 										</li>
@@ -96,7 +96,7 @@
 
 		<div id="wrapper">
 			
-			<div id="header" class="content-block">
+			<div id="header" class="content-block row">
 				<section class="center">
 						<div class="row row-height">
 							<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -109,9 +109,9 @@
 
 							  	<!-- Wrapper for slides -->
 							  	<div class="carousel-inner" role="listbox">
-								    <div class="item active">
+								    <div class="item active  col-xs-10 col-xs-offset-1">
 								      	<div class="slogan">
-											<object height="300" class="svg" data="assets/images/10KHOURS_MEDIA/logo_grey.svg" type="image/svg+xml"></object>
+											<object height="350" class="svg" data="assets/images/10KHOURS_MEDIA/logo_grey.svg" type="image/svg+xml"></object>
 										</div>
 										<div class="secondary-slogan">
 											<p>VIDEO AND FILM PRODUCTION.</p>
@@ -119,9 +119,9 @@
 										</div>
 								      
 								    </div>
-								    <div class="item">
+								    <div class="item  col-xs-10 col-xs-offset-1">
 								      	<div class="slogan">
-											<object height="300" class="svg" data="assets/images/10KHOURS_MEDIA/wedding-rings.svg" type="image/svg+xml"></object>
+											<object height="350" class="svg" data="assets/images/10KHOURS_MEDIA/wedding-rings.svg" type="image/svg+xml"></object>
 										</div>
 										<div class="secondary-slogan white">
 											<p>WEDDING VIDEOGRAPHY.</p>
@@ -130,9 +130,9 @@
 								      
 								    </div>
 								    <!-- /.item -->
-								    <div class="item">
+								    <div class="item  col-xs-10 col-xs-offset-1">
 								    	<div class="slogan">
-											<object height="300" class="svg" data="assets/images/10KHOURS_MEDIA/dancers.svg" type="image/svg+xml"></object>
+											<object height="350" class="svg" data="assets/images/10KHOURS_MEDIA/dancers.svg" type="image/svg+xml"></object>
 										</div>
 										<div class="secondary-slogan black">
 											<p>DANCE PERFORMANCE.</p>
@@ -141,11 +141,11 @@
 								     </div><!-- /.item -->
 							  	</div><!-- /.carousel-inner -->
 							</div><!-- /.carousel slide -->
-						</div>	
-					</section><!-- /.block-body -->
-			    		<div class="get-quote ">
+			    		<div class="get-quote">
 							<a  href="#parallax" class="scroll btn btn-o-white btn-lg">Get a free quote</a>
 						</div>
+						</div>	
+					</section><!-- /.block-body -->
 
 				<!-- <section class="center">
 					<div class="slogan">
@@ -367,7 +367,7 @@
 								<ul>
 									
 									<li class="address-sub"><i class="fa fa-envelope-o"></i>zsuzsi@10khoursmedia.com</li><br>
-									<li class="address-sub"><a href="www.facebook.com"><i class="fa fa-facebook"></i></a>connect on Facebook</li>
+									<li class="address-sub"><a id="facebook" href="http://www.facebook.com/10khoursmedia"><i class="fa fa-facebook"></i></a>connect on Facebook</li>
 								</ul>
 								<div class="social">
 								</div>	
@@ -401,10 +401,14 @@
 		  
 
 		jQuery(document).ready(function($){
-
+			var scrolled = false;
 		  	$(window).scroll(function() {
 
 				if ($(window).scrollTop() > 100 ){
+					if(scrolled==false){
+						ga('send', 'event', 'PageViewing', 'scrolled', 'Q4');
+						scrolled=true;
+					}
 		    
 		 		$('.top-header').addClass('shows');
 		    
@@ -426,6 +430,7 @@
 				  });
 				  $('.modal').click(function () {
 				      $(theModal + ' iframe').attr('src', videoSRC);
+				      ga('send', 'event', 'VideoModal', videoSRC, 'Q4');
 				  });
 				});
 			}
@@ -439,6 +444,13 @@
 		  jQuery('html, body').animate({
 		      scrollTop : jQuery(this.hash).offset().top
 		    }, 1500);
+		});
+
+		jQuery('#cfsubmit').on('click', function(e){
+			ga('send', 'event', 'Contact', 'MessageSubmited', 'Q4');
+		});
+		jQuery('#facebook').on('click', function(e){
+			ga('send', 'event', 'Contact', 'FacebookClick', 'Q4');
 		});
 
 		</script>
