@@ -439,6 +439,7 @@
 				  $(theModal + ' button.close').click(function () {
 				      $(theModal + ' iframe').attr('src', videoSRC);
 				  });
+				  $("#player").removeClass("no-fullscreen-support");
 				  $('.modal').click(function () {
 				      $(theModal + ' iframe').attr('src', videoSRC);
 				      ga('send', 'event', 'VideoModal', videoName, 'Q4');
